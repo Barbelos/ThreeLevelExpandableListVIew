@@ -41,10 +41,10 @@ public class Adapter extends BaseExpandableListAdapter {
   CustomExpandableListView subObjects= (CustomExpandableListView) convertView;;
   if (convertView==null) {
    subObjects= new CustomExpandableListView(activity);
-   Adapter2 adapter= new Adapter2(activity, object);
-   subObjects.setAdapter(adapter);
   }
-
+  Adapter2 adapter= new Adapter2(activity, object);
+  subObjects.setAdapter(adapter);
+  
   return subObjects;
  }
 
